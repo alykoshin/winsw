@@ -1,6 +1,6 @@
 {
   "name": "winsw",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Wrapper for winsw.exe to manage Windows services",
   "main": "./index.js",
   "engines": {
