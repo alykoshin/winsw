@@ -10,7 +10,7 @@
 
 # winsw
 
-Wrapper for winsw.exe to manage Windows services
+Wrapper for `winsw.exe` to manage Windows services
 
 
 If you have different needs regarding the functionality, please add a [feature request](https://github.com/alykoshin/winsw/issues).
@@ -25,7 +25,20 @@ npm install --save winsw
 ## Usage
 
 
+
+## `winsw.exe` binary
+
+Latest documentation for `winsw` can be found here:
+https://github.com/kohsuke/winsw
+
+Binary downloads for `winsw`:
+http://repo.jenkins-ci.org/releases/com/sun/winsw/winsw/
+
+`winsw.exe` is bundled inside this package.
+
+
 ## Credits
+
 [Alexander](https://github.com/alykoshin/)
 
 

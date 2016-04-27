@@ -32,7 +32,7 @@
     "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
-      "winsw.exe,winsw,windows,service,services,manager,install,remove,start,restart,stop,status,svc,winsvc"
+    "winsw.exe,winsw,windows,service,services,manager,install,remove,start,restart,stop,status,svc,winsvc"
   ],
   "author": "Alexander <alykoshin@gmail.com>",
   "license": "MIT",
@@ -45,6 +45,8 @@
   },
   "homepage": "https://github.com/alykoshin/winsw",
   "dependencies": {
+    "js2xmlparser": "^1.0.0",
+    "mini-fs": "0.0.4",
     "minimist": "^1.2.0"
   },
   "devDependencies": {

@@ -3,7 +3,7 @@
 
 var argv = require('minimist')(process.argv.slice(2));
 var pkg = require('./package.json');
-var winsw = require('./');
+var Winsw = require('./');
 
 
 function help() {
@@ -38,9 +38,26 @@ if (argv.v || argv.version) {
   process.exit(0);
 }
 
+//<service>
+//<id>jenkins</id>
+//<name>Jenkins</name>
+//<description>This service runs Jenkins continuous integration system.</description>
+//<env name="JENKINS_HOME" value="%BASE%"/>
+//  <executable>java</executable>
+//  <arguments>-Xrs -Xmx256m -jar "%BASE%\jenkins.war" --httpPort=8080</arguments>
+//  <logmode>rotate</logmode>
+//  </service>
 
-var main = require('./');
+var config = {
+  id: 'test',
+  name: 'testname',
+  description: 'testdescription',
+  executable: 'node.exe',
+  arguments: 'app.js'
+};
 
-main.exec(argv[0], function() {
+var options = { name: 'test' };
 
-});
+var winsw = Winsw(config, options);
+
+winsw.createWrapper();
